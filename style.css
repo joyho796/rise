@@ -1,0 +1,271 @@
+
+/* Color Scheme:
+ * Dark gray: rgba(89,89,89,1)
+ * Light blue: rgba(178,219,203,1)
+ * Dark blue: rgba(122,182,184,1)
+ */
+
+/* Text styling */
+body {
+    font-family: Verdana;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    color: rgba(89,89,89,1);
+}
+
+h1 {
+    text-align: right;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-right: 10%;
+    padding-top: 180px;
+    padding-bottom: 15px;
+    font-size: 52px;
+    letter-spacing: 2px;
+    font-variant-caps: all-small-caps;
+    text-shadow: 3px 3px rgba(178,219,203,1);
+}
+
+h2 {
+    text-align: right;
+    padding: 0px;
+    padding-right: 10%;
+    padding-bottom: 200px;
+    margin: 0px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    font-size: 22px;
+}
+
+h3 {
+    padding: 0px;
+    margin: 0px;
+    font-variant-caps: all-small-caps;
+    font-size: 32px;
+    text-shadow: 1.5px 1.5px rgba(178,219,203,1);
+}
+
+p {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    line-height: 24px;
+}
+
+a {
+    color: rgba(89,89,89,1);
+}
+
+a:visited {
+    color: rgba(89,89,89,1);
+}
+
+a:hover {
+    text-shadow: 1.5px 1.5px rgba(178,219,203,1);
+}
+
+/* Section styling */
+div {
+    padding: 0px;
+    margin: 0px;
+    background-color: rgba(178,219,203,0.0);
+}
+
+#header {
+    background-color: rgba(0,0,0,0);
+    background-image: url("images/background.png");
+    background-size: cover;
+    background-position: center top;
+}
+
+#footer {
+    background-color: rgba(89,89,89,1);
+    color: rgba(255,255,255,1);
+    font-size: 16px;
+}
+
+#footer a {
+    color: rgba(255,255,255,1);
+    text-decoration: none;
+}
+
+#flex {
+    background-color: rgba(0,0,0,0);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Navigation bar styling */
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgba(200,200,200,0);
+    overflow: hidden;
+    width:100%;
+}
+
+li {
+    float: right;
+}
+
+li a, li span {
+    display: block;
+    color: rgba(89,89,89,1);
+    font-size: 22px;
+    font-variant-caps: all-small-caps;
+    text-align: center;
+    padding: 18px 25px;
+    text-decoration: none;
+}
+
+li a:hover, li span:hover {
+    text-shadow: 1.5px 1.5px rgba(178,219,203,1);
+}
+
+.active {
+    font-weight: bold;
+}
+
+/* Table styling*/
+table {
+    width: 80%;
+    margin: auto;
+}
+
+td:nth-child(1) {
+  width: 20%;
+  padding-right: 8px;
+  }
+
+td:nth-child(2) {
+  width: 50%;
+}
+
+th {
+    text-align: left;
+    padding-bottom: 10px;
+    text-shadow: 1px 1px rgba(178,219,203,1);
+}
+
+td {
+    text-align: left;
+    padding-bottom: 50px;
+    vertical-align: top;
+}
+
+img {
+    border-radius: 12px;
+}
+
+/* Form styling */
+button, #button {
+    font-family: Verdana;
+    font-size: 16px;
+    background-color: rgba(0,0,0,0);
+    color: rgba(122,182,184,1);
+    border: 2px solid rgba(122,182,184,1);
+    padding: 9px 18px;
+    border-radius: 26px;
+    cursor: pointer;
+    float: center;
+    transition: color 0.5s;
+    transition: background-color 0.5s;
+}
+
+button:hover, #button:hover {
+    background-color: rgba(122,182,184,1);
+    color: rgb(255, 255, 255);
+}
+
+button:focus, #button:focus {
+    outline: none;
+}
+
+input[type=text], input[type=number] {
+    font-family: Verdana;
+    font-size: 16px;
+    border-radius: 18px;
+    padding: 7px 12px;
+    border: 2px solid rgba(122,182,184,1);
+    background-color: rgba(0,0,0,0);
+    width: 120px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input[type=number] {
+    width: 40px;
+    height: 12px;
+    font-size: 14px;
+}
+
+input[type=text]:focus, input[type=text]:hover {
+    background-color: rgba(122,182,184,1);
+    color: rgb(255, 255, 255);
+}
+
+/* Overlay Nagivation Styling */
+
+@media only screen and (max-width: 940px) {
+    #header {
+        display: none;
+    }
+    #mobile {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 940px) {
+    #header {
+        display: block;
+    }
+    #mobile {
+        display: none;
+    }
+}
+
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: rgba(255,255,255,0.9);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  font-variant-caps: all-small-caps;
+  color: rgba(89,89,89,1);
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: rgba(89,89,89,1);
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
