@@ -5,6 +5,8 @@
     <link href="style.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Animals, Animal Shelter, Adopt, Foster, Help, Donate, Boston, Animal Care">
+    <link rel="shortcut icon" type="image/jpg" href="images/logo-icon.png"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://apis.google.com/js/platform.js" async defer></script>
     <script src="script.js"></script>
     <script src="https://unpkg.com/scrollreveal@4"></script>
@@ -18,14 +20,20 @@
     <div id="header">
         <ul>
             <li style="float: left;">
-                <a href="index.html" style="font-size:36px; padding-top: 8px; font-weight: bold;">Rise Media
+                <a href="index.html" style="font-size:36px; padding-top: 12px; font-weight: bold;">
+                    <img src="images/logo.png" style='width:200px'>
                 </a>
             </li>
-            <li><a href="contact.html">Contact</a></li>
+
+            <div id='desktop-nav'>
+            <li style='padding-right: 24px;'><a href="contact.html">Contact</a></li>
             <li><a href="about.html">Influencers</a></li>
             <li><a href="events.html">Services</a></li>
             <li><a href="store.html">About</a></li>
-            <li><a href="help.html">Home</a></li>
+            <li><a href="index.html"class='active'>Home</a></li>
+            </div>
+
+            <li id='mobile'><span onclick="openNav()" style="font-size:42px;text-decoration: bold;padding: 0px 38px; padding-left:0px">&#8801</span></li>
         </ul>
 
         <h1 class='title'>Welcome to Rise Media</h1>
@@ -36,19 +44,11 @@
         <h2 href="" class="typewrite" data-period="2000" data-type='[ "end to end marketing solutions", "influencer management", "customized content creation", "innovative campaign strategies", "efficiency and effectiveness" ]'>
         <span class="wrap"></span>
         </h2>
-        <h2 class='desc-b'>
-            <br>
-            <button>Learn More</button>
-        </h2>
 
     </div>
 
-    <div id="mobile" style="background-image: url('images/background.png');background-size: cover;background-position: center top;">
+    <div style="display:none">
         <ul>
-            <li style="float: left;">
-                <a href="index.html" style="font-size:36px; padding-top: 8px; font-weight: bold;">Rise Media
-                </a>
-            </li>
             <li><span onclick="openNav()" style="font-size:42px;text-decoration: bold;padding: 0px 38px; padding-left:0px">&#8801</span></li>
         </ul>
         <div id="mobileNav" class="overlay">
@@ -63,20 +63,6 @@
                 <a href="contact.html">Contact</a>
             </div>
         </div>
-
-        <h1 class='title'>Welcome to Rise Media</h1>
-        <h2 class='desc'>
-            We are a creative social media<br>
-            marketing agency specializing in<br>
-        </h2>
-        <h2 href="" class="typewrite" data-period="2000" data-type='[ "end to end marketing solutions", "influencer management", "customized content creation", "innovative campaign strategies", "efficiency and effectiveness" ]'>
-        <span class="wrap"></span>
-        </h2>
-        <h2 class='desc-b'>
-            <br>
-            <button>Learn More</button>
-        </h2>
-
     </div>
 
     <br><br><br>
@@ -84,11 +70,11 @@
     <div class='summary'>
         <div id="flex" style='justify-content: space-evenly;'>
             <div>
-                <p style='margin:0vw'>
+                <p style='margin:0vw;font-size: 22px;line-height: 28px;'>
                     <i>
-                    We deliver the best value through<br>
+                    We deliver the <strong>best value</strong> through<br>
                     leveraging our involvement on<br>
-                    both ends of influencer marketing <br></i>
+                    <strong>both ends of influencer marketing</strong></i>
                 </p>
             </div>
             <div>
@@ -106,9 +92,14 @@
                 <img style='width:500px' src="images/home/two.png">
             </div>
             <div>
-                <p style='margin:10vw; width: 30vw'>
+                <p style='margin:10vw;font-size:22px;line-height: 28px;'>
                     <i>
-                    Here at Rise, we aim to create the best results for both brands and influencers seeking expansion. Our experts work with influencers closely to create the best value as well as ensure content quality. Rise also provides a total solutions package to brands to help them strategize, execute, and track holistic influencer marketing campaigns with catered goals.
+                    Our influencer teams work closely with talents <br>
+                    to generate the best results while guaranteeing <br>
+                    content quality. Our campaign experts work to <br>
+                    provide a total solutions package to brands to help <br>
+                    them strategize, execute, and track campaigns with <br>
+                    catered goals
                     </i>
             </div>
         </div>
@@ -116,10 +107,11 @@
 
     <br><br><br><br>
 
+
     <div class='services'>
-        <h3>Our Services</h3>
+        <h3><span>Our Services</span></h3>
         <div id='flex'>
-            <div class='card'>
+            <div class='card1' id='inf'>
                 <br><br>
                 <p style='font-size: 24px;'>
                 <i>for influencers</i>
@@ -130,50 +122,11 @@
                 <i>what you can expect from our collaboration</i>
                 <br><br>
                 </p>
+                <div class='arrow' id='for-infa'>
+                </div>
             </div>
-            <div class='sBox'>
+            <div class='card1' id='brd'>
                 <br><br>
-                <p style='font-weight: bold;color:rgba(221, 169, 153,1);'>
-                    Expand Network & Partnerships
-                </p>
-                <hr style='width: 75px;margin-top: 18px;'>
-                <br>
-                <p style='font-size:16px'>
-                    – Find the most synergetic brands for your content and following <br>
-                    – Streamline the collaboration search process with our pool of resources
-                </p>
-            </div>
-            <div class='sBox'>
-                <br><br>
-                <p style='font-weight: bold;color:rgba(221, 169, 153,1);'>
-                    Influencer Value Grown
-                </p>
-                <hr style='width: 75px;margin-top: 18px;'>
-                <br>
-                <p style='font-size:16px'>
-                    – Understand and increase the value & compensation of sponsored content <br>
-                    – Mentorship for reorienting content & personal image to foster a brand friendly growth trajectory
-                </p>
-            </div>
-            <div class='sBox'>
-                <br><br>
-                <p style='font-weight: bold;color:rgba(221, 169, 153,1);'>
-                    Data Analytics & Support
-                </p>
-                <hr style='width: 75px;margin-top: 18px;'>
-                <br>
-                <p style='font-size:16px'>
-                    – Gain insight into following and content breakdown with our AI-Driven data analytics resources<br>
-                    – Receive catered media kits to show off your strongest assets in the brand outreach process
-                </p>
-            </div>
-        </div>
-
-        <br><br><br><br>
-
-         <div id='flex'>
-            <div class='card' style='height:280px'>
-                <br><br><br>
                 <p style='font-size: 24px;'>
                 <i>for brands</i>
                 </p>
@@ -183,56 +136,113 @@
                 <i>what you can expect from our collaboration</i>
                 <br><br>
                 </p>
-            </div>
-            <div class='sBox'>
-                <p style='font-weight: bold;color:rgba(221, 169, 153,1);'>
-                    Influencer <br>
-                    Search & Vetting
-                </p>
-                <hr style='width: 75px;margin-top: 18px;'>
-                <br>
-                <p style='font-size:16px'>
-                    – Get connected with the most synergic influencers for your campaign goals<br>
-                    – Enjoy endless possibilities with high brand safety and vetted influencers<br>
-                    – Customized contracts with influencers for catered terms
-                </p>
-            </div>
-            <div class='sBox'>
-                <p style='font-weight: bold;color:rgba(221, 169, 153,1);'>
-                    Customized Strategy <br>
-                    & Content Creation
-                </p>
-                <hr style='width: 75px;margin-top: 18px;'>
-                <br>
-                <p style='font-size:16px'>
-                    – Personalized marketing strategy from goal setting to execution to reach target market effectively <br>
-                    – Customized content creation from industry experts based on your goals<br>
-                    – Catered influencer and content posting schedules as well as monitoring
-                </p>
-            </div>
-            <div class='sBox'>
-                <p style='font-weight: bold;color:rgba(221, 169, 153,1);'>
-                   Campaign Success <br>
-                   Tracking & Analytics
-                </p>
-                <hr style='width: 75px;margin-top: 18px;'>
-                <br>
-                <p style='font-size:16px'>
-                    – AI-Driven data analytic resources to track important KPIs<br>
-                    – Reflections on campaign results as well as successful aspects of the campaign for future campaigns
-                </p>
+                <div class='arrow' id='for-brda'>
+                </div>
             </div>
         </div>
 
+        <div id='for-inf'>
+            <div id='flex'>
+                <div class='inf-d'>
+                    <img src="images/home/inf-1.png">
+                    <br><br>
+                    <p style='font-weight: bold; color: rgb(110, 182, 207);'>
+                    Expand Network & Partnerships
+                    </p>
+                    <hr style='width: 75px;margin-top: 22px;'>
+                    <br>
+                    <p style='font-size:18px'>
+                        – Find the most synergetic brands for your content and following <br><br>
+                        – Streamline the collaboration search process with our pool of resources
+                    </p>
+                </div>
+                <div class='inf-d'>
+                    <img src="images/home/inf-2.png">
+                    <br><br>
+                    <p style='font-weight: bold; color: rgb(110, 182, 207);'>
+                    Influencer Value Growth
+                    </p>
+                    <hr style='width: 75px;margin-top: 22px;'>
+                    <br>
+                    <p style='font-size:18px'>
+                    – Understand and increase the value & compensation of sponsored content <br><br>
+                    – Mentorship for reorienting content & personal image to foster a brand friendly growth trajectory
+                    </p>
+                </div>
+                <div class='inf-d'>
+                    <img src="images/home/inf-3.png">
+                    <br><br>
+                    <p style='font-weight: bold;color:rgb(110, 182, 207);'>
+                        Data Analytics & Support
+                    </p>
+                    <hr style='width: 75px;margin-top: 22px;'>
+                    <br>
+                    <p style='font-size:18px'>
+                        – Gain insight into following and content breakdown with our AI-Driven data analytics resources<br><br>
+                        – Receive catered media kits to show off your strongest assets in the brand outreach process
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id='for-brd'>
+            <div id='flex'>
+                <div class='inf-d'>
+                    <img src="images/home/brd-1.png">
+                    <br><br>
+                    <p style='font-weight: bold;color:rgb(110, 182, 207);'>
+                    Influencer <br>
+                    Search & Vetting
+                    </p>
+                    <hr style='width: 75px;margin-top: 22px;'>
+                    <br>
+                    <p style='font-size:18px'>
+                        – Get connected with the most synergic influencers for your campaign goals<br><br>
+                        – Enjoy endless possibilities with high brand safety and vetted influencers<br><br>
+                        – Customized contracts with influencers for catered terms
+                    </p>
+                </div>
+                <div class='inf-d'>
+                    <img src="images/home/brd-2.png">
+                    <br><br>
+                    <p style='font-weight: bold;color:rgb(110, 182, 207);'>
+                        Customized Strategy <br>
+                        & Content Creation
+                    </p>
+                    <hr style='width: 75px;margin-top: 22px;'>
+                    <br>
+                    <p style='font-size:18px'>
+                        – Personalized marketing strategy from goal setting to execution to reach target market effectively <br><br>
+                        – Customized content creation from industry experts based on your goals<br><br>
+                        – Catered influencer and content posting schedules as well as monitoring
+                    </p>
+                </div>
+                <div class='inf-d'>
+                    <img src="images/home/inf-3.png">
+                    <br><br>
+                    <p style='font-weight: bold;color:rgb(110, 182, 207);'>
+                       Campaign Success <br>
+                       Tracking & Analytics
+                    </p>
+                    <hr style='width: 75px;margin-top: 22px;'>
+                    <br>
+                    <p style='font-size:18px'>
+                        – AI-Driven data analytic resources to track important KPIs<br><br>
+                        – Reflections on campaign results as well as successful aspects of the campaign for future campaigns<br><br>
+                        – Missing one item her dk ad ijafl dlaks asdjf als;dk f
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
-
     <br><br><br>
 
+
+
     <div class='influencers'>
-        <h3>Our Influencers</h3>
-        <br>
-        <div id="flex">
-            <div class='profile'>
+        <h3><span>Our Influencers</span></h3>
+        <br><br>
+        <div class='wrapper'>
+            <div id='test'class='profile'style='margin-left: calc(50vw - 534px);'>
                 <img src="images/influencers/helen.png">
                 <p style='font-size: 18px;padding-top: 8px;font-weight: bold;'>
                     Helen Peng
@@ -259,12 +269,30 @@
                     @bebiisan
                 </p>
             </div>
+            <div class='profile'>
+                <img src="images/influencers/young.png">
+                <p style='font-size: 18px;padding-top: 8px;font-weight: bold;'>
+                    Young Seok Kim
+                </p>
+                <p style='font-size: 14px;font-style: italic;'>
+                    @youngqim
+                </p>
+            </div>
+            <div class='profile'>
+                <img src="images/influencers/cecilia.png">
+                <p style='font-size: 18px;padding-top: 8px;font-weight: bold;'>
+                    Cecilia Jing
+                </p>
+                <p style='font-size: 14px;font-style: italic;'>
+                    @gegethejing
+                </p>
+            </div>
         </div>
         <br><br><br>
     </div>
 
     <div class='clients'>
-        <h3>Our Clients</h3>
+        <h3><span>Our Clients</span></h3>
         <br><br>
         <div id="flex" style='flex-direction: row;'>
             <div id='logo-container' style='overflow-y:auto;display:flex;flex-direction: row; justify-content: center;'>
@@ -294,7 +322,10 @@
                         <img src="images/logos/nordstrom.png">
                     </a>
                 </div>
-                <!--
+            </div>
+        </div>
+        <div id="flex" style='flex-direction: row;'>
+            <div id='logo-container' style='overflow-y:auto;display:flex;flex-direction: row; justify-content: center;'>
                 <div class='logo'>
                     <a href="https://www.emehive.co/" target='blank'>
                         <img src="images/logos/eme.png">
@@ -320,20 +351,21 @@
                         <img src="images/logos/ys.png">
                     </a>
                 </div>
-                -->
             </div>
         </div>
     </div>
 
-    <br><br><br><br>
+    <br><br><br>
 
-    <div>
-        <h3>Interested?</h3>
+    <div style='background-color:rgba(110, 182, 207,0.6)'>
+        <br><br>
+        <p style='font-style: italic;color:white;font-size: 24px'>
+        Interested in our services? We'd love to chat about it!</p>
         <br><br>
         <button>Contact Us</button>
+        <br><br><br>
     </div>
 
-    <br><br><br><br>
 
     <div id="footer">
         <br><br>
@@ -353,7 +385,6 @@
         ScrollReveal().reveal('.title', { delay: 200 })
         ScrollReveal().reveal('.desc', { delay: 800 })
         ScrollReveal().reveal('.typewrite', { delay: 800 })
-        ScrollReveal().reveal('.desc-b', { delay: 1500 })
         ScrollReveal().reveal('.summary', { delay: 200 })
         ScrollReveal().reveal('.about', { delay: 200 })
         ScrollReveal().reveal('.services', { delay: 200 })
