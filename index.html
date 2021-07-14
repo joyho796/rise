@@ -8,6 +8,7 @@
     <link rel="shortcut icon" type="image/jpg" href="images/logo-icon.png"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="jquery-transit-min.js"></script>
     <script src="script.js"></script>
     <script src="https://unpkg.com/scrollreveal@4"></script>
     <script>
@@ -16,8 +17,10 @@
 </head>
 
 <body>
+<div class='content'>
 
     <div id="header">
+        <div id='header2'>
         <ul>
             <li style="float: left;">
                 <a href="index.html" style="font-size:36px; padding-top: 12px; font-weight: bold;">
@@ -33,7 +36,7 @@
             <li><a href="index.html"class='active'>Home</a></li>
             </div>
 
-            <li id='mobile'><span onclick="openNav()" style="font-size:42px;text-decoration: bold;padding: 0px 38px; padding-left:0px">&#8801</span></li>
+            <li id='mobile'><span onclick="openNav()" style="font-size:80px;text-decoration: bold;padding: 0px 42px; padding-left:0px">&#8801</span></li>
         </ul>
 
         <h1 class='title'>Welcome to Rise Media</h1>
@@ -44,24 +47,19 @@
         <h2 href="" class="typewrite" data-period="2000" data-type='[ "end to end marketing solutions", "influencer management", "customized content creation", "innovative campaign strategies", "efficiency and effectiveness" ]'>
         <span class="wrap"></span>
         </h2>
-
+        </div>
     </div>
 
-    <div style="display:none">
-        <ul>
-            <li><span onclick="openNav()" style="font-size:42px;text-decoration: bold;padding: 0px 38px; padding-left:0px">&#8801</span></li>
-        </ul>
-        <div id="mobileNav" class="overlay">
+    <div id="mobileNav" class="overlay">
 
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
-            <div class="overlay-content">
-                <a href="help.html">Home</a>
-                <a href="store.html">About</a>
-                <a href="events.html">Services</a>
-                <a href="about.html">Influencers</a>
-                <a href="contact.html">Contact</a>
-            </div>
+        <div class="overlay-content">
+            <a href="help.html">Home</a>
+            <a href="store.html">About</a>
+            <a href="events.html">Services</a>
+            <a href="about.html">Influencers</a>
+            <a href="contact.html">Contact</a>
         </div>
     </div>
 
@@ -78,7 +76,7 @@
                 </p>
             </div>
             <div>
-                <img src="images/home/one.png">
+                <img style='width: 500px' src="images/home/one.png">
             </div>
 
         </div>
@@ -109,7 +107,7 @@
 
 
     <div class='services'>
-        <h3><span>Our Services</span></h3>
+        <h3><span>– Our Services –</span></h3>
         <div id='flex'>
             <div class='card1' id='inf'>
                 <br><br>
@@ -239,118 +237,152 @@
 
 
     <div class='influencers'>
-        <h3><span>Our Influencers</span></h3>
+        <h3><span>– Our Influencers –</span></h3>
         <br><br>
         <div class='wrapper'>
-            <div id='test'class='profile'style='margin-left: calc(50vw - 534px);'>
-                <img src="images/influencers/helen.png">
-                <p style='font-size: 18px;padding-top: 8px;font-weight: bold;'>
-                    Helen Peng
-                </p>
-                <p style='font-size: 14px;font-style: italic;'>
-                    @helenpenggg
-                </p>
+            <div class='prof'>
+                <div id='prof-f'class='profile'>
+                    <div class='p-front'>
+                        <img src="images/influencers/helen.png">
+                        <p style='font-size: 18px;padding-top: 8px;font-weight: bold;'>
+                            Helen Peng
+                        </p>
+                        <p style='font-size: 14px;font-style: italic;'>
+                            @helenpenggg
+                        </p>
+                    </div>
+                    <div class='p-back'>
+                        <p>asdf</p>
+                    </div>
+                </div>
             </div>
-            <div class='profile'>
-                <img src="images/influencers/chammy.png">
-                <p style='font-size: 18px;padding-top: 8px;font-weight: bold;'>
-                    Chammy Choi
-                </p>
-                <p style='font-size: 14px;font-style: italic;'>
-                    @porojin
-                </p>
+            <div class='prof'>
+                <div class='profile'>
+                    <div class='p-front'>
+                        <img src="images/influencers/chammy.png">
+                        <p style='font-size: 18px;padding-top: 8px;font-weight: bold;'>
+                            Chammy Choi
+                        </p>
+                        <p style='font-size: 14px;font-style: italic;'>
+                            @porojin
+                        </p>
+                    </div>
+                    <div class='p-back'>
+                        <br><br>
+                        <p><strong>THE INFO</strong></p>
+                    </div>
+                </div>
             </div>
-            <div class='profile'>
-                <img src="images/influencers/bebii.png">
-                <p style='font-size: 18px;padding-top: 8px;font-weight: bold;'>
-                    Bebii San
-                </p>
-                <p style='font-size: 14px;font-style: italic;'>
-                    @bebiisan
-                </p>
+            <div class='prof'>
+                <div class='profile'>
+                    <div class='p-front'>
+                        <img src="images/influencers/bebii.png">
+                        <p style='font-size: 18px;padding-top: 8px;font-weight: bold;'>
+                            Bebii San
+                        </p>
+                        <p style='font-size: 14px;font-style: italic;'>
+                            @bebiisan
+                        </p>
+                    </div>
+                    <div class='p-back'>
+                        <br><br>
+                        <p><strong>THE INFO</strong></p>
+                    </div>
+                </div>
             </div>
-            <div class='profile'>
-                <img src="images/influencers/young.png">
-                <p style='font-size: 18px;padding-top: 8px;font-weight: bold;'>
-                    Young Seok Kim
-                </p>
-                <p style='font-size: 14px;font-style: italic;'>
-                    @youngqim
-                </p>
+            <div class='prof'>
+                <div class='profile'>
+                    <div class='p-front'>
+                        <img src="images/influencers/young.png">
+                        <p style='font-size: 18px;padding-top: 8px;font-weight: bold;'>
+                            Young Seok Kim
+                        </p>
+                        <p style='font-size: 14px;font-style: italic;'>
+                            @youngqim
+                        </p>
+                    </div>
+                    <div class='p-back'>
+                        <br><br>
+                        <p><strong>THE INFO</strong></p>
+                    </div>
+                </div>
             </div>
-            <div class='profile'>
-                <img src="images/influencers/cecilia.png">
-                <p style='font-size: 18px;padding-top: 8px;font-weight: bold;'>
-                    Cecilia Jing
-                </p>
-                <p style='font-size: 14px;font-style: italic;'>
-                    @gegethejing
-                </p>
+            <div class='prof'>
+                <div id='prof-l' class='profile'>
+                    <div class='p-front'>
+                        <img src="images/influencers/cecilia.png">
+                        <p style='font-size: 18px;padding-top: 8px;font-weight: bold;'>
+                            Cecilia Jing
+                        </p>
+                        <p style='font-size: 14px;font-style: italic;'>
+                            @gegethejing
+                        </p>
+                    </div>
+                    <div class='p-back'>
+                        <br><br>
+                        <p><strong>THE INFO</strong></p>
+                    </div>
+                </div>
             </div>
         </div>
         <br><br><br>
     </div>
 
     <div class='clients'>
-        <h3><span>Our Clients</span></h3>
+        <h3><span>– Our Clients –</span></h3>
         <br><br>
-        <div id="flex" style='flex-direction: row;'>
-            <div id='logo-container' style='overflow-y:auto;display:flex;flex-direction: row; justify-content: center;'>
-
-                <div class='logo'>
-                    <a href="https://us.anker.com/" target="blank">
-                        <img src="images/logos/anker.png">
-                    </a>
-                </div>
-                <div class='logo'>
-                    <a href="https://www.webtoons.com/en/" target='blank'>
-                        <img src="images/logos/webtoon.png">
-                    </a>
-                </div>
-                <div class='logo'>
-                    <a href="https://www.universalmusic.com/" target='blank'>
-                        <img src="images/logos/universal.png">
-                    </a>
-                </div>
-                <div class='logo'>
-                    <a href="https://www.casetify.com/" target='blank'>
-                        <img src="images/logos/casetify.png">
-                    </a>
-                </div>
-                <div class='logo'>
-                    <a href="https://www.nordstrom.com/" target='blank'>
-                        <img src="images/logos/nordstrom.png">
-                    </a>
-                </div>
+        <div id="flex" style='flex-direction: row; overflow-x: scroll;max-width: 100vw;'>
+            <div class='logo'>
+                <a href="https://us.anker.com/" target="blank">
+                    <img src="images/logos/anker.png">
+                </a>
+            </div>
+            <div class='logo'>
+                <a href="https://www.webtoons.com/en/" target='blank'>
+                    <img src="images/logos/webtoon.png">
+                </a>
+            </div>
+            <div class='logo'>
+                <a href="https://www.universalmusic.com/" target='blank'>
+                    <img src="images/logos/universal.png">
+                </a>
+            </div>
+            <div class='logo'>
+                <a href="https://www.casetify.com/" target='blank'>
+                    <img src="images/logos/casetify.png">
+                </a>
+            </div>
+            <div class='logo'>
+                <a href="https://www.nordstrom.com/" target='blank'>
+                    <img src="images/logos/nordstrom.png">
+                </a>
             </div>
         </div>
-        <div id="flex" style='flex-direction: row;'>
-            <div id='logo-container' style='overflow-y:auto;display:flex;flex-direction: row; justify-content: center;'>
-                <div class='logo'>
-                    <a href="https://www.emehive.co/" target='blank'>
-                        <img src="images/logos/eme.png">
-                    </a>
-                </div>
-                <div class='logo'>
-                    <a href="https://www.rainn.org/" target='blank'>
-                        <img src="images/logos/rainn.png">
-                    </a>
-                </div>
-                <div class='logo'>
-                    <a href="https://www.honkforhelp.com/" target='blank'>
-                        <img src="images/logos/honk.png">
-                    </a>
-                </div>
-                <div class='logo'>
-                    <a href="https://curology.com" target='blank'>
-                        <img src="images/logos/curology.png">
-                    </a>
-                </div>
-                <div class='logo'>
-                    <a href="https://www.yesstyle.com/en/home.html" target='blank'>
-                        <img src="images/logos/ys.png">
-                    </a>
-                </div>
+    <div id="flex" style='flex-direction: row;overflow-x: scroll;max-width: 100vw;'>
+            <div class='logo'>
+                <a href="https://www.emehive.co/" target='blank'>
+                    <img src="images/logos/eme.png">
+                </a>
+            </div>
+            <div class='logo'>
+                <a href="https://www.rainn.org/" target='blank'>
+                    <img src="images/logos/rainn.png">
+                </a>
+            </div>
+            <div class='logo'>
+                <a href="https://www.honkforhelp.com/" target='blank'>
+                    <img src="images/logos/honk.png">
+                </a>
+            </div>
+            <div class='logo'>
+                <a href="https://curology.com" target='blank'>
+                    <img src="images/logos/curology.png">
+                </a>
+            </div>
+            <div class='logo'>
+                <a href="https://www.yesstyle.com/en/home.html" target='blank'>
+                    <img src="images/logos/ys.png">
+                </a>
             </div>
         </div>
     </div>
@@ -392,6 +424,7 @@
         ScrollReveal().reveal('.clients', { delay: 200 })
 
     </script>
-</body>
 
+</div>
+</body>
 </html>

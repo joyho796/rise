@@ -23,6 +23,12 @@
     src: url('fonts/aileron/Aileron-LightItalic.otf');
     font-style: italic;
 }
+@font-face {
+    font-family: aileron;
+    src: url('fonts/aileron/Aileron-BoldItalic.otf');
+    font-weight: bold;
+    font-style: italic;
+}
 
 
 /* Text styling */
@@ -56,8 +62,8 @@ h1 {
 h2 {
     text-align: right;
     padding: 0px;
-    padding-right: 8%;
-    padding-left: 8%;
+    padding-right: 8vw;
+    padding-left: 8vw;
     padding-bottom: 0px;
     margin: 0px;
     color: var(--lightblue);
@@ -67,17 +73,10 @@ h2 {
 }
 
 h3 {
-   width: 20%;
-   margin: auto;
-   text-align: center;
-   border-bottom: 1px solid var(--blue);
-   line-height: 0.1em;
-}
-
-h3 span {
-    background-color: rgb(249,248,248);
-    padding:0 20px;
-    width: 10%;
+    font-size: 36px;
+    margin: auto;
+    text-align: center;
+    font-weight: bolder;
 }
 
 p {
@@ -107,11 +106,23 @@ div {
     background-color: rgba(178,219,203,0.0);
 }
 
+.content {
+    height: 100%;
+}
+
 #header {
-    background-image: url("images/header.png");
-    background-size: cover;
-    background-position: center bottom;
+    background-image: url("images/home/b1-b.png");
+    background-position: calc(-100px) calc(45vh);
+    background-size: 60vh;
+    background-repeat: no-repeat;
     height: 100vh;
+}
+
+#header2 {
+    background-image: url("images/home/b2-p.png");
+    background-position: calc(100vw - 400px) calc(-100px);
+    background-size: 70vh;
+    background-repeat: no-repeat;
 }
 
 #footer {
@@ -167,10 +178,11 @@ div {
     margin: auto;
     width: 50px;
     height: 50px;
-    transform: translateY(39px) rotate(45deg);
+    transform: translateY(38.5px) rotate(45deg);
     border-left: 0.5px solid var(--pink);
     border-top: 0.5px solid var(--pink);
     background-color: rgb(249,248,248);
+    position: relative;
 }
 
 #for-inf, #for-brd {
@@ -210,17 +222,24 @@ div {
   display: none;
 }
 
+.prof {
+    padding: 42px;
+    transition: 0.3s;
+}
 
+.prof:hover {
+    transform: translateY(-10px);
+    cursor: pointer;
+}
 .profile {
-    left: 10vw;
-    position: sticky;
-    margin: 42px;
+    position: static;
     width: 300px;
     height: 480px;
     border-radius: 12px;
-    background-color: var(--white);
+    text-align: center;
     box-shadow: 0px 0px 12px rgba(0,0,0,0.1);
-    transition: 250ms;
+    transition: 0.3s;
+    transform-style: preserve-3d;
 }
 
 .profile img {
@@ -230,29 +249,21 @@ div {
     border-bottom-left-radius: 0px;
 }
 
-.profile:hover {
-    transform: translateY(-10px);
+.p-front {
+    background-color: var(--white);
 }
 
-.profile:nth-child(1n) {
-    left: calc(50vw - 534px);
+.p-front, .p-back {
+    position: absolute;
+    border-radius: 12px;
+    width: 300px;
+    height: 480px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
-.profile:nth-child(2n) {
-    left: calc((50vw - 534px) + 24px);
-}
-
-.profile:nth-child(3n) {
-    left: calc((50vw - 534px) + 48px);
-}
-
-.profile:nth-child(4n) {
-    left: calc((50vw - 534px) + 72px);
-}
-
-.profile:nth-child(5n) {
-    left: calc((50vw - 534px) + 96px);
-    margin-right: calc(100vw - ((50vw - 534px) + 96px) - 300px);
+.p-back {
+    transform: rotateY(180deg);
 }
 
 .typewrite {
@@ -391,7 +402,7 @@ input[type=text]:focus, input[type=text]:hover {
 
 /* Overlay Nagivation Styling */
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1000px) {
     #desktop-nav {
         display: none;
     }
@@ -401,14 +412,43 @@ input[type=text]:focus, input[type=text]:hover {
     #flex {
         flex-direction: column;
     }
+    #prof-f {
+        margin-left: calc(50vw - 192px);
+    }
+    #prof-l {
+        margin-right: calc(50vw - 192px);
+    }
+    .logo {
+        border-radius: 100px;
+        width: 100px;
+        height: 100px;
+        margin: 18px;
+    }
+
+    .logo img {
+        width: 100px;
+        height: 100px;
+    }
+    h1  {
+        font-size: 48px;
+    }
+    h2 {
+        font-size: 24px;
+    }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1000px) {
     #desktop-nav {
         display: block;
     }
     #mobile {
         display: none;
+    }
+    #prof-f {
+        margin-left: calc(50vw - 576px);
+    }
+    #prof-l {
+        margin-right: calc(50vw - 576px);
     }
 }
 
@@ -419,7 +459,7 @@ input[type=text]:focus, input[type=text]:hover {
   z-index: 1;
   left: 0;
   top: 0;
-  background-color: rgba(255,255,255,0.9);
+  background-color: var(--pink);
   overflow-y: hidden;
   transition: 0.5s;
 }
@@ -428,8 +468,12 @@ input[type=text]:focus, input[type=text]:hover {
   position: relative;
   top: 25%;
   width: 100%;
+  color: white;
   text-align: center;
   margin-top: 30px;
+  font-weight: bold;
+  font-style: italic;
+  line-height: 56px;
 }
 
 .overlay a {
@@ -437,13 +481,13 @@ input[type=text]:focus, input[type=text]:hover {
   text-decoration: none;
   font-size: 36px;
   font-variant-caps: all-small-caps;
-  color: rgba(89,89,89,1);
+  color: white;
   display: block;
   transition: 0.3s;
 }
 
 .overlay a:hover, .overlay a:focus {
-  color: rgba(89,89,89,1);
+  color: var(--blue);
 }
 
 .overlay .closebtn {

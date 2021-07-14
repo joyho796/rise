@@ -108,4 +108,15 @@ $(document).ready(function(){
         }
 
     });
+
+    $('.profile').click(function() {
+        console.log($(this).css("rotateY"));
+        if ($(this).css("rotateY") != '180deg') {
+            $(this).transition(
+                {rotateY: '180deg'}, 800);
+        } else {
+            $(this).transition(
+                {rotateY: 0}, 800);
+        }
+    });
 });
