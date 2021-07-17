@@ -17,36 +17,47 @@
 </head>
 
 <body>
-<div class='content'>
+    <div class='content'>
+
+
 
     <div id="header">
         <div id='header2'>
         <ul>
             <li style="float: left;">
-                <a href="index.html" style="font-size:36px; padding-top: 12px; font-weight: bold;">
-                    <img src="images/logo.png" style='width:200px'>
+                <a href="index.html" style="font-size:36px; padding-top: 12px; padding-bottom: 8px;font-weight: bold;">
+                    <img src="images/logo.png" style='width:200px'id='mobile'>
+                    <img src="images/logo-w.png" style='width:230px'id='desktop-nav'>
                 </a>
             </li>
 
             <div id='desktop-nav'>
             <li style='padding-right: 24px;'><a href="contact.html">Contact</a></li>
-            <li><a href="about.html">Influencers</a></li>
-            <li><a href="events.html">Services</a></li>
-            <li><a href="store.html">About</a></li>
+            <li><a href="influencers.html">Influencers</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
             <li><a href="index.html"class='active'>Home</a></li>
             </div>
 
             <li id='mobile'><span onclick="openNav()" style="font-size:80px;text-decoration: bold;padding: 0px 42px; padding-left:0px">&#8801</span></li>
         </ul>
 
-        <h1 class='title'>Welcome to Rise Media</h1>
-        <h2 class='desc'>
-            We are a creative social media<br>
-            marketing agency specializing in<br>
-        </h2>
-        <h2 href="" class="typewrite" data-period="2000" data-type='[ "end to end marketing solutions", "influencer management", "customized content creation", "innovative campaign strategies", "efficiency and effectiveness" ]'>
-        <span class="wrap"></span>
-        </h2>
+        <video autoplay muted loop id="introVid">
+            <source src="images/intro.mp4" type="video/mp4">
+        </video>
+
+        <div id='mobile' style='padding-top: 20vh;'>
+            <h1 class='title'>Welcome to <br>
+            Rise Media</h1>
+            <h2 class='desc'>
+                We are a creative social media
+                marketing agency specializing in
+            </h2>
+            <h2 href="" class="typewrite" data-period="2000" data-type='[ "end to end marketing solutions", "influencer management", "customized content creation", "innovative campaign strategies", "efficiency and effectiveness" ]'>
+            <span class="wrap"></span>
+            </h2>
+        </div>
+
         </div>
     </div>
 
@@ -67,8 +78,8 @@
 
     <div class='summary'>
         <div id="flex" style='justify-content: space-evenly;'>
-            <div>
-                <p style='margin:0vw;font-size: 22px;line-height: 28px;'>
+            <div id='sum-1'>
+                <p>
                     <i>
                     We deliver the <strong>best value</strong> through<br>
                     leveraging our involvement on<br>
@@ -76,7 +87,7 @@
                 </p>
             </div>
             <div>
-                <img style='width: 500px' src="images/home/one.png">
+                <img style='width: 450px;' src="images/home/one.png">
             </div>
 
         </div>
@@ -85,18 +96,18 @@
     <br><br><br>
 
     <div class='about'>
-        <div id="flex">
+        <div id="flex" style='justify-content: space-evenly;'>
             <div>
-                <img style='width:500px' src="images/home/two.png">
+                <img style='width:450px;' src="images/home/two.png">
             </div>
-            <div>
-                <p style='margin:10vw;font-size:22px;line-height: 28px;'>
+            <div id='sum-2'>
+                <p>
                     <i>
                     Our influencer teams work closely with talents <br>
-                    to generate the best results while guaranteeing <br>
-                    content quality. Our campaign experts work to <br>
+                    to generate the <strong>best results</strong> while guaranteeing <br>
+                    content quality. Our campaign <strong>experts</strong> work to <br>
                     provide a total solutions package to brands to help <br>
-                    them strategize, execute, and track campaigns with <br>
+                    them <strong>strategize, execute, and track</strong> campaigns with <br>
                     catered goals
                     </i>
             </div>
@@ -110,30 +121,34 @@
         <h3><span>– Our Services –</span></h3>
         <div id='flex'>
             <div class='card1' id='inf'>
-                <br><br>
-                <p style='font-size: 24px;'>
-                <i>for influencers</i>
-                </p>
-                <hr style='width: 75px;margin-top: 18px;'>
-                <p>
-                <br>
-                <i>what you can expect from our collaboration</i>
-                <br><br>
-                </p>
+                <div class='open'>
+                    <br><br>
+                    <p style='font-size: 24px;'>
+                    <i>for influencers</i>
+                    </p>
+                    <hr style='width: 75px;margin-top: 18px;'>
+                    <p>
+                    <br>
+                    <i>what you can expect from our collaboration</i>
+                    <br><br><br>
+                    </p>
+                </div>
                 <div class='arrow' id='for-infa'>
                 </div>
             </div>
             <div class='card1' id='brd'>
-                <br><br>
-                <p style='font-size: 24px;'>
-                <i>for brands</i>
-                </p>
-                <hr style='width: 75px;margin-top: 18px;'>
-                <p>
-                <br>
-                <i>what you can expect from our collaboration</i>
-                <br><br>
-                </p>
+                <div class='open'>
+                    <br><br>
+                    <p style='font-size: 24px;'>
+                    <i>for brands</i>
+                    </p>
+                    <hr style='width: 75px;margin-top: 18px;'>
+                    <p>
+                    <br>
+                    <i>what you can expect from our collaboration</i>
+                    <br><br><br>
+                    </p>
+                </div>
                 <div class='arrow' id='for-brda'>
                 </div>
             </div>
@@ -182,7 +197,7 @@
                 </div>
             </div>
         </div>
-        <div id='for-brd'>
+        <div id='for-brd' style='padding-bottom: 90px;'>
             <div id='flex'>
                 <div class='inf-d'>
                     <img src="images/home/brd-1.png">
@@ -252,7 +267,28 @@
                         </p>
                     </div>
                     <div class='p-back'>
-                        <p>asdf</p>
+                        <div class='inf-desc-back'>
+                            <p>
+                                <strong>HELEN PENG</strong><br>
+                                21 | Chinese | University Student <br>
+                                she/her/hers <br><br>
+                                <strong>TAGS</strong><br>
+                            </p>
+                                <div style='line-height: 36px;transform: translateX(-10px);'>
+                                <span class='tag'>Beauty</span>
+                                <span class='tag'>Style & Fashion</span>
+                                <span class='tag'>Dance</span>
+                                <span class='tag'>Music</span><br>
+                                </div>
+                            <p>
+                                <br><strong>KEY PERFORMANCE</strong><br>
+                                Combined Reach: 1.79M <br>
+                                Monthly Engagement: 601.17K <br>
+                                Average Video Views: 463.45K<br><br>
+                                <strong>BRAND SAFETY SCORE: </strong>&nbsp&nbsp98%
+
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -268,8 +304,29 @@
                         </p>
                     </div>
                     <div class='p-back'>
-                        <br><br>
-                        <p><strong>THE INFO</strong></p>
+                        <div class='inf-desc-back'>
+                            <p>
+                                <strong>CHAMMY CHOI</strong><br>
+                                20 | Korean | University Student <br>
+                                she/her/hers <br><br>
+                                <strong>TAGS</strong><br>
+                            </p>
+                                <div style='line-height: 36px;transform: translateX(-10px);'>
+                                <span class='tag'>Beauty</span>
+                                <span class='tag'>Style & Fashion</span>
+                                <span class='tag'>Lifestyle</span>
+                                <span class='tag'>Vlogs</span><br>
+                                <span class='tag'>Comedy & Entertainment</span>
+                                </div>
+                            <p>
+                                <br><strong>KEY PERFORMANCE</strong><br>
+                                Combined Reach: 799.93K <br>
+                                Monthly Engagement: 2.59M <br>
+                                Average Video Views: 312.17K<br><br>
+                                <strong>BRAND SAFETY SCORE: </strong>&nbsp&nbsp94%
+
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -285,8 +342,30 @@
                         </p>
                     </div>
                     <div class='p-back'>
-                        <br><br>
-                        <p><strong>THE INFO</strong></p>
+                        <div class='inf-desc-back'>
+                            <p>
+                                <strong>BEBII SAN</strong><br>
+                                22 | Korean/Japanese <br>
+                                University Student <br>
+                                she/her/hers <br><br>
+                                <strong>TAGS</strong><br>
+                            </p>
+                                <div style='line-height: 36px;transform: translateX(-10px);'>
+                                <span class='tag'>Beauty</span>
+                                <span class='tag'>Style & Fashion</span>
+                                <span class='tag'>Lifestyle</span>
+                                <span class='tag'>Vlogs</span><br>
+                                <span class='tag'>Comedy & Entertainment</span>
+                                </div>
+                            <p>
+                                <br><strong>KEY PERFORMANCE</strong><br>
+                                Combined Reach: 2.24M <br>
+                                Monthly Engagement: 1.93M <br>
+                                Average Video Views: 544.63K<br><br>
+                                <strong>BRAND SAFETY SCORE: </strong>&nbsp&nbsp98%
+
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -302,8 +381,29 @@
                         </p>
                     </div>
                     <div class='p-back'>
-                        <br><br>
-                        <p><strong>THE INFO</strong></p>
+                        <div class='inf-desc-back'>
+                            <p>
+                                <strong>YOUNG SEOK KIM</strong><br>
+                                20 | Korean | University Student <br>
+                                she/her/hers <br><br>
+                                <strong>TAGS</strong><br>
+                            </p>
+                                <div style='line-height: 36px;transform: translateX(-10px);'>
+                                <span class='tag'>Beauty</span>
+                                <span class='tag'>Style & Fashion</span>
+                                <span class='tag'>Lifestyle</span>
+                                <span class='tag'>Vlogs</span><br>
+                                <span class='tag'>Comedy & Entertainment</span>
+                                </div>
+                            <p>
+                                <br><strong>KEY PERFORMANCE</strong><br>
+                                Combined Reach: 799.93K <br>
+                                 Monthly Engagement: 2.59M <br>
+                                Average Video Views: 312.17K<br><br>
+                                <strong>BRAND SAFETY SCORE: </strong>&nbsp&nbsp94%
+
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -319,8 +419,29 @@
                         </p>
                     </div>
                     <div class='p-back'>
-                        <br><br>
-                        <p><strong>THE INFO</strong></p>
+                        <div class='inf-desc-back'>
+                            <p>
+                                <strong>CECILIA JING</strong><br>
+                                21 | Chinese | University Student <br>
+                                she/her/hers <br><br>
+                                <strong>TAGS</strong><br>
+                            </p>
+                                <div style='line-height: 36px;transform: translateX(-10px);'>
+                                <span class='tag'>Beauty</span>
+                                <span class='tag'>Style & Fashion</span>
+                                <span class='tag'>Lifestyle</span>
+                                <span class='tag'>Vlogs</span>
+                                <span class='tag'>Music</span>
+                                </div>
+                            <p>
+                                <br><strong>KEY PERFORMANCE</strong><br>
+                                Combined Reach: 1.24M <br>
+                                Monthly Engagement: 1.19M <br>
+                                Average Video Views: 445.81K<br><br>
+                                <strong>BRAND SAFETY SCORE: </strong>&nbsp&nbsp94%
+
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -417,14 +538,13 @@
         ScrollReveal().reveal('.title', { delay: 200 })
         ScrollReveal().reveal('.desc', { delay: 800 })
         ScrollReveal().reveal('.typewrite', { delay: 800 })
-        ScrollReveal().reveal('.summary', { delay: 200 })
-        ScrollReveal().reveal('.about', { delay: 200 })
-        ScrollReveal().reveal('.services', { delay: 200 })
-        ScrollReveal().reveal('.influencers', { delay: 200 })
-        ScrollReveal().reveal('.clients', { delay: 200 })
+        ScrollReveal().reveal('.summary', { delay: 100 })
+        ScrollReveal().reveal('.about', { delay: 100 })
+        ScrollReveal().reveal('.services', { delay: 100 })
+        ScrollReveal().reveal('.influencers', { delay: 100 })
+        ScrollReveal().reveal('.clients', { delay: 100 })
 
     </script>
-
-</div>
+    </div>
 </body>
 </html>

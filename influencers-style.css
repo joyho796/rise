@@ -1,0 +1,48 @@
+:root {
+    --white:  rgba(255,255,255,1);
+    --pink: rgb(110, 182, 207);
+    --beige: rgba(238, 232, 235,1);
+    --blue: rgba(95, 106, 114,1);
+    --lightblue: rgba(95, 106, 114,0.8);
+}
+
+.inf-bio {
+    padding: 36px;
+    background-color: rgba(110, 182, 207,0.2);
+}
+
+.bio-img {
+    width: 300px;
+    height: 400px;
+}
+
+.sm-icon {
+    position: absolute;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 1.6em;
+    height: 1.6em;
+    transform: translateY(-4px);
+}
+
+.inf-bio p {
+    text-align: left;
+}
+
+.inf-img-flex {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.inf-img-desc {
+    margin-right: 36px;
+}
+
+.tag {
+    background-color: whitesmoke;
+    font-size: 18px;
+    padding: 8px;
+    margin: 6px;
+    border-radius: 4px;
+}
