@@ -66,9 +66,30 @@ var TxtType = function(el, toRotate, period) {
         document.body.appendChild(css);
     };
 
+function doCounter() {
+    const counters = document.querySelectorAll('.counter');
+    // Main function
+    for(let n of counters) {
+      const updateCount = () => {
+        const target = + n.getAttribute('data-target');
+        const count = + n.innerText;
+        const speed = 3000; // change animation speed here
+        const inc = target / speed;
+        if(count < target) {
+          n.innerText = Math.ceil(count + inc);
+          setTimeout(updateCount, 40);
+        } else {
+          n.innerText = target;
+        }
+      }
+      updateCount();
+    }
+}
+
 $(document).ready(function(){
     $("#for-brd").hide();
     $("#for-brda").hide();
+    $(".open-inf").css('box-shadow', '0px 0px 12px rgba(0,0,0,0.2)');
     // $("#for-inf").hide();
     // $("#for-infa").hide();
 
@@ -78,15 +99,18 @@ $(document).ready(function(){
             $("#for-brd").slideUp(800, function(){
                 $("#for-brda").slideUp(1, function(){
                     $("#for-infa").slideDown(1, function(){
-                $("#for-inf").slideDown(800);
-            });
+                        $("#for-inf").slideDown(800);
+                    });
                 });
             });
+            $(".open-brd").css('box-shadow', '0px 0px 12px rgba(0,0,0,0.08)');
+            $(".open-inf").css('box-shadow', '0px 0px 12px rgba(0,0,0,0.2)');
 
         } else {
             $("#for-inf").slideUp(800, function(){
                 $("#for-infa").slideUp(1);
             });
+            $(".open-inf").css('box-shadow', '0px 0px 12px rgba(0,0,0,0.08)');
         }
 
     });
@@ -97,14 +121,17 @@ $(document).ready(function(){
             $("#for-inf").slideUp(800, function(){
                 $("#for-infa").slideUp(1, function() {
                     $("#for-brda").slideDown(1, function(){
-                $("#for-brd").slideDown(800);
-            });
+                        $("#for-brd").slideDown(800);
+                    });
                 });
             });
+            $(".open-inf").css('box-shadow', '0px 0px 12px rgba(0,0,0,0.08)');
+            $(".open-brd").css('box-shadow', '0px 0px 12px rgba(0,0,0,0.12)');
         } else {
             $("#for-brd").slideUp(800, function(){
                 $("#for-brda").slideUp(1);
             });
+            $(".open-brd").css('box-shadow', '0px 0px 12px rgba(0,0,0,0.08)');
         }
 
     });
@@ -119,4 +146,6 @@ $(document).ready(function(){
                 {rotateY: 0}, 800);
         }
     });
+
 });
+

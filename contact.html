@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Rise Media | Contact Us</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="contact-style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Animals, Animal Shelter, Adopt, Foster, Help, Donate, Boston, Animal Care">
+    <link rel="shortcut icon" type="image/jpg" href="images/logo-icon.png"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="jquery-transit-min.js"></script>
+    <script src="script.js"></script>
+    <script src="form-script.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4"></script>
+    <script>
+        ScrollReveal({ duration: 1800 })
+    </script>
+</head>
+
+<body>
+<div class='content'>
+
+    <div id="header">
+        <div id='header2'>
+        <ul>
+            <li style="float: left;">
+                <a href="index.html" style="font-size:36px; padding-top: 12px; font-weight: bold;">
+                    <img src="images/logo.png" style='width:200px'>
+                </a>
+            </li>
+
+            <div id='desktop-nav'>
+            <li style='padding-right: 24px;'><a href="contact.html"class='active'>Contact</a></li>
+            <li><a href="influencers.html">Influencers</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="index.html">Home</a></li>
+            </div>
+
+            <li id='mobile'><span onclick="openNav()" style="font-size:80px;text-decoration: bold;padding: 0px 42px; padding-left:0px">&#8801</span></li>
+        </ul>
+
+        <h1 class='title'>Contact Us</h1>
+
+        </div>
+    </div>
+
+    <div id="mobileNav" class="overlay">
+
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+        <div class="overlay-content">
+            <a href="help.html">Home</a>
+            <a href="store.html">About</a>
+            <a href="events.html">Services</a>
+            <a href="about.html">Influencers</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+
+    <div id='form-open-message'>
+        <h3>We'd love to get in touch with you! </h3>
+        <h4>Please tell us a little about yourself</h4>
+
+        <br><br>
+
+        <h4>Who are you?</h4>
+        <div style='display: flex; flex-direction: row; justify-content: center;'>
+            <button id='inf-button' class='s-button'>I'm an influencer</button>
+            <button id='brd-button' class='s-button'>I'm a brand representative</button>
+        </div>
+    </div>
+
+    <div id='inf-form'>
+        <div id='inf-form-1' class='form-div'>
+            <div>
+                <span class='form-label'>What is your first name?</span><br>
+                <input type=text></form>
+            </div>
+
+            <div>
+                <span class='form-label'>Last name?</span><br>
+                <input type=text></form>
+            </div>
+
+            <div>
+                <span class='form-label'>What is the e-mail we can contact you at?</span><br>
+                <input type=email placeholder=""></form>
+            </div>
+
+            <div>
+                <span class='form-label'>What country do you live in?</span><br>
+                <select id="country" name="country">
+                    <option>select country</option>
+                    <option value="AF">Afghanistan</option>
+                    <option value="AX">Aland Islands</option>
+                    <option value="AL">Albania</option>
+                    <option value="DZ">Algeria</option>
+                    <option value="AS">American Samoa</option>
+                    <option value="AD">Andorra</option>
+                    <option value="AO">Angola</option>
+                    <option value="AI">Anguilla</option>
+                    <option value="AQ">Antarctica</option>
+                    <option value="AG">Antigua and Barbuda</option>
+                    <option value="AR">Argentina</option>
+                    <option value="AM">Armenia</option>
+                    <option value="AW">Aruba</option>
+                    <option value="AU">Australia</option>
+                    <option value="AT">Austria</option>
+                    <option value="AZ">Azerbaijan</option>
+                    <option value="BS">Bahamas</option>
+                    <option value="BH">Bahrain</option>
+                    <option value="BD">Bangladesh</option>
+                    <option value="BB">Barbados</option>
+                    <option value="BY">Belarus</option>
+                    <option value="BE">Belgium</option>
+                    <option value="BZ">Belize</option>
+                    <option value="BJ">Benin</option>
+                    <option value="BM">Bermuda</option>
+                    <option value="BT">Bhutan</option>
+                    <option value="BO">Bolivia</option>
+                    <option value="BQ">Bonaire, Sint Eustatius and Saba</option>
+                    <option value="BA">Bosnia and Herzegovina</option>
+                    <option value="BW">Botswana</option>
+                    <option value="BV">Bouvet Island</option>
+                    <option value="BR">Brazil</option>
+                    <option value="IO">British Indian Ocean Territory</option>
+                    <option value="BN">Brunei Darussalam</option>
+                    <option value="BG">Bulgaria</option>
+                    <option value="BF">Burkina Faso</option>
+                    <option value="BI">Burundi</option>
+                    <option value="KH">Cambodia</option>
+                    <option value="CM">Cameroon</option>
+                    <option value="CA">Canada</option>
+                    <option value="CV">Cape Verde</option>
+                    <option value="KY">Cayman Islands</option>
+                    <option value="CF">Central African Republic</option>
+                    <option value="TD">Chad</option>
+                    <option value="CL">Chile</option>
+                    <option value="CN">China</option>
+                    <option value="CX">Christmas Island</option>
+                    <option value="CC">Cocos (Keeling) Islands</option>
+                    <option value="CO">Colombia</option>
+                    <option value="KM">Comoros</option>
+                    <option value="CG">Congo</option>
+                    <option value="CD">Congo, Democratic Republic of the Congo</option>
+                    <option value="CK">Cook Islands</option>
+                    <option value="CR">Costa Rica</option>
+                    <option value="CI">Cote D'Ivoire</option>
+                    <option value="HR">Croatia</option>
+                    <option value="CU">Cuba</option>
+                    <option value="CW">Curacao</option>
+                    <option value="CY">Cyprus</option>
+                    <option value="CZ">Czech Republic</option>
+                    <option value="DK">Denmark</option>
+                    <option value="DJ">Djibouti</option>
+                    <option value="DM">Dominica</option>
+                    <option value="DO">Dominican Republic</option>
+                    <option value="EC">Ecuador</option>
+                    <option value="EG">Egypt</option>
+                    <option value="SV">El Salvador</option>
+                    <option value="GQ">Equatorial Guinea</option>
+                    <option value="ER">Eritrea</option>
+                    <option value="EE">Estonia</option>
+                    <option value="ET">Ethiopia</option>
+                    <option value="FK">Falkland Islands (Malvinas)</option>
+                    <option value="FO">Faroe Islands</option>
+                    <option value="FJ">Fiji</option>
+                    <option value="FI">Finland</option>
+                    <option value="FR">France</option>
+                    <option value="GF">French Guiana</option>
+                    <option value="PF">French Polynesia</option>
+                    <option value="TF">French Southern Territories</option>
+                    <option value="GA">Gabon</option>
+                    <option value="GM">Gambia</option>
+                    <option value="GE">Georgia</option>
+                    <option value="DE">Germany</option>
+                    <option value="GH">Ghana</option>
+                    <option value="GI">Gibraltar</option>
+                    <option value="GR">Greece</option>
+                    <option value="GL">Greenland</option>
+                    <option value="GD">Grenada</option>
+                    <option value="GP">Guadeloupe</option>
+                    <option value="GU">Guam</option>
+                    <option value="GT">Guatemala</option>
+                    <option value="GG">Guernsey</option>
+                    <option value="GN">Guinea</option>
+                    <option value="GW">Guinea-Bissau</option>
+                    <option value="GY">Guyana</option>
+                    <option value="HT">Haiti</option>
+                    <option value="HM">Heard Island and Mcdonald Islands</option>
+                    <option value="VA">Holy See (Vatican City State)</option>
+                    <option value="HN">Honduras</option>
+                    <option value="HK">Hong Kong</option>
+                    <option value="HU">Hungary</option>
+                    <option value="IS">Iceland</option>
+                    <option value="IN">India</option>
+                    <option value="ID">Indonesia</option>
+                    <option value="IR">Iran, Islamic Republic of</option>
+                    <option value="IQ">Iraq</option>
+                    <option value="IE">Ireland</option>
+                    <option value="IM">Isle of Man</option>
+                    <option value="IL">Israel</option>
+                    <option value="IT">Italy</option>
+                    <option value="JM">Jamaica</option>
+                    <option value="JP">Japan</option>
+                    <option value="JE">Jersey</option>
+                    <option value="JO">Jordan</option>
+                    <option value="KZ">Kazakhstan</option>
+                    <option value="KE">Kenya</option>
+                    <option value="KI">Kiribati</option>
+                    <option value="KP">Korea, Democratic People's Republic of</option>
+                    <option value="KR">Korea, Republic of</option>
+                    <option value="XK">Kosovo</option>
+                    <option value="KW">Kuwait</option>
+                    <option value="KG">Kyrgyzstan</option>
+                    <option value="LA">Lao People's Democratic Republic</option>
+                    <option value="LV">Latvia</option>
+                    <option value="LB">Lebanon</option>
+                    <option value="LS">Lesotho</option>
+                    <option value="LR">Liberia</option>
+                    <option value="LY">Libyan Arab Jamahiriya</option>
+                    <option value="LI">Liechtenstein</option>
+                    <option value="LT">Lithuania</option>
+                    <option value="LU">Luxembourg</option>
+                    <option value="MO">Macao</option>
+                    <option value="MK">Macedonia, the Former Yugoslav Republic of</option>
+                    <option value="MG">Madagascar</option>
+                    <option value="MW">Malawi</option>
+                    <option value="MY">Malaysia</option>
+                    <option value="MV">Maldives</option>
+                    <option value="ML">Mali</option>
+                    <option value="MT">Malta</option>
+                    <option value="MH">Marshall Islands</option>
+                    <option value="MQ">Martinique</option>
+                    <option value="MR">Mauritania</option>
+                    <option value="MU">Mauritius</option>
+                    <option value="YT">Mayotte</option>
+                    <option value="MX">Mexico</option>
+                    <option value="FM">Micronesia, Federated States of</option>
+                    <option value="MD">Moldova, Republic of</option>
+                    <option value="MC">Monaco</option>
+                    <option value="MN">Mongolia</option>
+                    <option value="ME">Montenegro</option>
+                    <option value="MS">Montserrat</option>
+                    <option value="MA">Morocco</option>
+                    <option value="MZ">Mozambique</option>
+                    <option value="MM">Myanmar</option>
+                    <option value="NA">Namibia</option>
+                    <option value="NR">Nauru</option>
+                    <option value="NP">Nepal</option>
+                    <option value="NL">Netherlands</option>
+                    <option value="AN">Netherlands Antilles</option>
+                    <option value="NC">New Caledonia</option>
+                    <option value="NZ">New Zealand</option>
+                    <option value="NI">Nicaragua</option>
+                    <option value="NE">Niger</option>
+                    <option value="NG">Nigeria</option>
+                    <option value="NU">Niue</option>
+                    <option value="NF">Norfolk Island</option>
+                    <option value="MP">Northern Mariana Islands</option>
+                    <option value="NO">Norway</option>
+                    <option value="OM">Oman</option>
+                    <option value="PK">Pakistan</option>
+                    <option value="PW">Palau</option>
+                    <option value="PS">Palestinian Territory, Occupied</option>
+                    <option value="PA">Panama</option>
+                    <option value="PG">Papua New Guinea</option>
+                    <option value="PY">Paraguay</option>
+                    <option value="PE">Peru</option>
+                    <option value="PH">Philippines</option>
+                    <option value="PN">Pitcairn</option>
+                    <option value="PL">Poland</option>
+                    <option value="PT">Portugal</option>
+                    <option value="PR">Puerto Rico</option>
+                    <option value="QA">Qatar</option>
+                    <option value="RE">Reunion</option>
+                    <option value="RO">Romania</option>
+                    <option value="RU">Russian Federation</option>
+                    <option value="RW">Rwanda</option>
+                    <option value="BL">Saint Barthelemy</option>
+                    <option value="SH">Saint Helena</option>
+                    <option value="KN">Saint Kitts and Nevis</option>
+                    <option value="LC">Saint Lucia</option>
+                    <option value="MF">Saint Martin</option>
+                    <option value="PM">Saint Pierre and Miquelon</option>
+                    <option value="VC">Saint Vincent and the Grenadines</option>
+                    <option value="WS">Samoa</option>
+                    <option value="SM">San Marino</option>
+                    <option value="ST">Sao Tome and Principe</option>
+                    <option value="SA">Saudi Arabia</option>
+                    <option value="SN">Senegal</option>
+                    <option value="RS">Serbia</option>
+                    <option value="CS">Serbia and Montenegro</option>
+                    <option value="SC">Seychelles</option>
+                    <option value="SL">Sierra Leone</option>
+                    <option value="SG">Singapore</option>
+                    <option value="SX">Sint Maarten</option>
+                    <option value="SK">Slovakia</option>
+                    <option value="SI">Slovenia</option>
+                    <option value="SB">Solomon Islands</option>
+                    <option value="SO">Somalia</option>
+                    <option value="ZA">South Africa</option>
+                    <option value="GS">South Georgia and the South Sandwich Islands</option>
+                    <option value="SS">South Sudan</option>
+                    <option value="ES">Spain</option>
+                    <option value="LK">Sri Lanka</option>
+                    <option value="SD">Sudan</option>
+                    <option value="SR">Suriname</option>
+                    <option value="SJ">Svalbard and Jan Mayen</option>
+                    <option value="SZ">Swaziland</option>
+                    <option value="SE">Sweden</option>
+                    <option value="CH">Switzerland</option>
+                    <option value="SY">Syrian Arab Republic</option>
+                    <option value="TW">Taiwan, Province of China</option>
+                    <option value="TJ">Tajikistan</option>
+                    <option value="TZ">Tanzania, United Republic of</option>
+                    <option value="TH">Thailand</option>
+                    <option value="TL">Timor-Leste</option>
+                    <option value="TG">Togo</option>
+                    <option value="TK">Tokelau</option>
+                    <option value="TO">Tonga</option>
+                    <option value="TT">Trinidad and Tobago</option>
+                    <option value="TN">Tunisia</option>
+                    <option value="TR">Turkey</option>
+                    <option value="TM">Turkmenistan</option>
+                    <option value="TC">Turks and Caicos Islands</option>
+                    <option value="TV">Tuvalu</option>
+                    <option value="UG">Uganda</option>
+                    <option value="UA">Ukraine</option>
+                    <option value="AE">United Arab Emirates</option>
+                    <option value="GB">United Kingdom</option>
+                    <option value="US">United States</option>
+                    <option value="UM">United States Minor Outlying Islands</option>
+                    <option value="UY">Uruguay</option>
+                    <option value="UZ">Uzbekistan</option>
+                    <option value="VU">Vanuatu</option>
+                    <option value="VE">Venezuela</option>
+                    <option value="VN">Viet Nam</option>
+                    <option value="VG">Virgin Islands, British</option>
+                    <option value="VI">Virgin Islands, U.s.</option>
+                    <option value="WF">Wallis and Futuna</option>
+                    <option value="EH">Western Sahara</option>
+                    <option value="YE">Yemen</option>
+                    <option value="ZM">Zambia</option>
+                    <option value="ZW">Zimbabwe</option>
+                </select>
+            </div>
+        </div>
+
+        <div id='inf-form-2' class='form-div'>
+            <span class='form-label'>What platforms are you active on? </span><br>
+            <div style='display: flex; flex-direction:row;justify-content: center;'>
+
+                <label class="checkbox-container">
+                    <img src='images/sm-logos/tiktok.png' class='logo-img'><br>
+                    <input type="checkbox" id='checkbox-tt'>
+                    <span class="checkmark"></span>
+                </label>
+
+                <label class="checkbox-container">
+                    <img src='images/sm-logos/instagram.png' class='logo-img'><br>
+                    <input type="checkbox" id='checkbox-ins'>
+                    <span class="checkmark"></span>
+                </label>
+
+                <label class="checkbox-container">
+                    <img src='images/sm-logos/youtube.png' class='logo-img'><br>
+                    <input type="checkbox" id='checkbox-yt'>
+                    <span class="checkmark"></span>
+                </label>
+
+                <label class="checkbox-container">
+                    <img src='images/sm-logos/twitch.png' class='logo-img'><br>
+                    <input type="checkbox" id='checkbox-twitch'>
+                    <span class="checkmark"></span>
+                </label>
+
+            </div>
+        </div>
+
+        <div id='inf-form-3' class='form-div'>
+            <div id='inf-form-3-tt' class='form-div'>
+                <div class='username-input'>
+                    <span class='form-label'>How can we find you on TikTok?&nbsp&nbsp&nbsp@</span>
+                    <input type=text></form>
+                </div>
+                <span class='form-label'>How many <strong>followers</strong> do you have on <strong>TikTok</strong>?</span><br>
+                <div style='display: flex; flex-direction:row;justify-content: center;'>
+
+                    <label class="select-container">
+                        <input type="radio" name='tt-followers'>
+                        <span class="radio-check"></span>
+                        <span class='button-text'>< 50k</span>
+                    </label>
+
+                    <label class="select-container">
+                        <input type="radio" name='tt-followers'>
+                        <span class="radio-check"></span>
+                        <span class='button-text'>< 100k</span>
+                    </label>
+
+                    <label class="select-container">
+                        <input type="radio" name='tt-followers'>
+                        <span class="radio-check"></span>
+                        <span class='button-text'>< 500k</span>
+                    </label>
+
+                    <label class="select-container">
+                        <input type="radio" name='tt-followers'>
+                        <span class="radio-check"></span>
+                        <span class='button-text'><1M</span>
+                    </label>
+
+                    <label class="select-container">
+                        <input type="radio" name='tt-followers'>
+                        <span class="radio-check"></span>
+                        <span class='button-text'>< 5M</span>
+                    </label>
+
+                    <label class="select-container">
+                        <input type="radio" name='tt-followers'>
+                        <span class="radio-check"></span>
+                        <span class='button-text'>5M+</span>
+                    </label>
+                </div>
+            </div>
+
+            <div id='inf-form-3-ins' class='form-div'>
+                <div class='username-input'>
+                    <span class='form-label'>How can we find you on Instagram?&nbsp&nbsp&nbsp@</span>
+                    <input type=text></form>
+                </div>
+                <span class='form-label'>How many <strong>followers</strong> do you have on <strong>Instagram</strong>?</span><br>
+                <div style='display: flex; flex-direction:row;justify-content: center;'>
+
+                    <label class="select-container">
+                        <input type="radio" name='ins-followers'>
+                        <span class="radio-check"></span>
+                        <span class='button-text'>< 50k</span>
+                    </label>
+
+                    <label class="select-container">
+                        <input type="radio" name='ins-followers'>
+                        <span class="radio-check"></span>
+                        <span class='button-text'>< 100k</span>
+                    </label>
+
+                    <label class="select-container">
+                        <input type="radio" name='ins-followers'>
+                        <span class="radio-check"></span>
+                        <span class='button-text'>< 500k</span>
+                    </label>
+
+                    <label class="select-container">
+                        <input type="radio" name='ins-followers'>
+                        <span class="radio-check"></span>
+                        <span class='button-text'><1M</span>
+                    </label>
+
+                    <label class="select-container">
+                        <input type="radio" name='ins-followers'>
+                        <span class="radio-check"></span>
+                        <span class='button-text'>< 5M</span>
+                    </label>
+
+                    <label class="select-container">
+                        <input type="radio" name='ins-followers'>
+                        <span class="radio-check"></span>
+                        <span class='button-text'>5M+</span>
+                    </label>
+                </div>
+            </div>
+
+            <div id='inf-form-3-yt' class='form-div'>
+                <div class='username-input'>
+                    <span class='form-label'>How can we find you on YouTube?&nbsp&nbsp&nbsp</span>
+                    <input type=text></form>
+                </div>
+                <span class='form-label'>How many <strong>subscribers</strong> do you have on <strong>YouTube</strong>?</span><br>
+                <div style='display: flex; flex-direction:row;justify-content: center;'>
+
+                    <label class="select-container">
+                        <input type="radio" name='yt-followers'>
+                        <span class="radio-check"></span>
+                        <span class='button-text'>< 50k</span>
+                    </label>
+
+                    <label class="select-container">
+                        <input type="radio" name='yt-followers'>
+                        <span class="radio-check"></span>
+                        <span class='button-text'>< 100k</span>
+                    </label>
+
+                    <label class="select-container">
+                        <input type="radio" name='yt-followers'>
+                        <span class="radio-check"></span>
+                        <span class='button-text'>< 500k</span>
+                    </label>
+
+                    <label class="select-container">
+                        <input type="radio" name='yt-followers'>
+                        <span class="radio-check"></span>
+                        <span class='button-text'><1M</span>
+                    </label>
+
+                    <label class="select-container">
+                        <input type="radio" name='yt-followers'>
+                        <span class="radio-check"></span>
+                        <span class='button-text'>< 5M</span>
+                    </label>
+
+                    <label class="select-container">
+                        <input type="radio" name='yt-followers'>
+                        <span class="radio-check"></span>
+                        <span class='button-text'>5M+</span>
+                    </label>
+                </div>
+            </div>
+
+            <div id='inf-form-3-twitch' class='form-div'>
+                <div class='username-input'>
+                    <span class='form-label'>How can we find you on Twitch?&nbsp&nbsp&nbsp</span>
+                    <input type=text></form>
+                </div>
+                <span class='form-label'>How many <strong>subscriptions</strong> do you have on <strong>Twitch</strong>?</span><br>
+                <div style='display: flex; flex-direction:row;justify-content: center;'>
+
+                    <label class="select-container">
+                        <input type="radio" name='twitch-followers'>
+                        <span class="radio-check"></span>
+                        <span class='button-text'>< 50k</span>
+                    </label>
+
+                    <label class="select-container">
+                        <input type="radio" name='twitch-followers'>
+                        <span class="radio-check"></span>
+                        <span class='button-text'>< 100k</span>
+                    </label>
+
+                    <label class="select-container">
+                        <input type="radio" name='twitch-followers'>
+                        <span class="radio-check"></span>
+                        <span class='button-text'>< 500k</span>
+                    </label>
+
+                    <label class="select-container">
+                        <input type="radio" name='twitch-followers'>
+                        <span class="radio-check"></span>
+                        <span class='button-text'><1M</span>
+                    </label>
+
+                    <label class="select-container">
+                        <input type="radio" name='twitch-followers'>
+                        <span class="radio-check"></span>
+                        <span class='button-text'>< 5M</span>
+                    </label>
+
+                    <label class="select-container">
+                        <input type="radio" name='twitch-followers'>
+                        <span class="radio-check"></span>
+                        <span class='button-text'>5M+</span>
+                    </label>
+                </div>
+            </div>
+
+            <button id='inf-form-submit'>Submit</button>
+
+        </div>
+
+    </div>
+
+    <div id='inf-form-submit-message' class='form-div'>
+        <br>
+        <h3>Thank you for contacting us!</h3>
+        <h4>You'll be hearing from us soon</h4>
+        <br>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <div id='direct-contact'>
+        <h3>Want to contact us directly?</h3>
+        <h4>Here's where you can find us</h4>
+        <br><br>
+        <p>
+            Email: <i>talent@risemedia.io</i>
+        </p>
+        <br>
+        <p>
+            Follow us <strong>@risemedia</strong>
+        </p>
+        <br>
+        <img src="images/sm-logos/tiktok.png" class="sm-icon">
+        <img src="images/sm-logos/instagram.png" class="sm-icon">
+        <img src="images/sm-logos/youtube.png" class="sm-icon"><br><br>
+    </div>
+
+<!--     <div id='brd-form' class='form-div'>
+        <form>
+            <div id='form-wrapper'>
+                <div>
+                    <span class='form-label'>Your name:</span><br>
+                    <input type=text></form>
+                </div>
+
+                <div>
+                    <span class='form-label'>Your email:</span><br>
+                    <input type=text></form>
+                </div>
+
+                <div>
+                    <span class='form-label'>Your brand name:</span><br>
+                    <input type=text></form>
+                </div>
+            </div>
+        </form>
+        <div id='form-information'>
+            <p style='font-size:24px;line-height: 36px;'>
+                <span style='font-weight: bold;font-size:36px'>Information</span><br><br>
+                For direct contact:<br>
+                <i>talent@risemedia.io</i><br>
+                Follow us <i>@risemedia</i>
+            </p>
+
+        </div>
+    </div> -->
+
+    <br><br><br>
+
+    <div style='background-color:rgba(110, 182, 207,0.6)'>
+        <br><br>
+        <p style='font-style: italic;color:white;font-size: 24px'>
+        Interested in our services? We'd love to chat about it!</p>
+        <br><br>
+        <button>Contact Us</button>
+        <br><br><br>
+    </div>
+
+
+    <div id="footer">
+        <br><br>
+        <div id="flex">
+            <p>
+            <a href="about.html">HOME</a>&nbsp|&nbsp
+            <a href="contact.html">ABOUT</a>&nbsp|&nbsp
+            <a href="help.html">CONTACT</a>
+            </p>
+        </div>
+        <br><br>
+        <p style="font-size: 14px">&copy 2021 Rise Media</p>
+        <br><br>
+    </div>
+
+    <script>
+        ScrollReveal().reveal('.title', { delay: 200 })
+        ScrollReveal().reveal('.desc', { delay: 800 })
+        ScrollReveal().reveal('.typewrite', { delay: 800 })
+        ScrollReveal().reveal('.summary', { delay: 100 })
+        ScrollReveal().reveal('.about', { delay: 100 })
+        ScrollReveal().reveal('.services', { delay: 100 })
+        ScrollReveal().reveal('.influencers', { delay: 100 })
+        ScrollReveal().reveal('.clients', { delay: 100 })
+
+    </script>
+
+</div>
+</body>
+</html>

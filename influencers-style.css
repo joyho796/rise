@@ -18,11 +18,19 @@
 
 .sm-icon {
     position: absolute;
+    margin-left: 10px;
+    margin-right: 10px;
     padding-left: 10px;
     padding-right: 10px;
-    width: 1.6em;
-    height: 1.6em;
-    transform: translateY(-4px);
+    width: 2em;
+    height: 2em;
+    object-fit: cover;
+    transform: translateY(-6px);
+}
+
+.spacer {
+    display: inline-block;
+    width: 50px;
 }
 
 .inf-bio p {
@@ -39,10 +47,19 @@
     margin-right: 36px;
 }
 
+.tag-div {
+    line-height: 56px;
+    margin-left: 13%;
+    text-align: left;
+}
+
 .tag {
+    display: inline-block;
     background-color: whitesmoke;
-    font-size: 18px;
-    padding: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    line-height: 16px;
     margin: 6px;
     border-radius: 4px;
 }

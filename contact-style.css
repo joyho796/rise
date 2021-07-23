@@ -1,0 +1,245 @@
+hr {
+    width: 20vw;
+    min-width: 200px;
+}
+.s-button {
+    font-weight: normal;
+    font-style: italic;
+    font-size: 28px;
+    background-color: rgba(110, 182, 207,0.5);
+    border: none;
+    margin: 72px;
+    width: 300px;
+    height: 150px;
+    transition: 0.5s;
+}
+
+.s-button:hover {
+    box-shadow: 4px 4px 0px rgba(80, 152, 177,0.5);
+}
+
+#form-wrapper {
+    position: absolute;
+    right: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-right: 148px;
+}
+
+#form-information {
+    position: absolute;
+    left: 50vw;
+    padding-left: 3px;
+    padding-right: 36px;
+    min-width: 35vw;
+    border-left: 0.5px solid var(--pink);
+    height: 600px
+}
+
+.form-div {
+    display: none;
+}
+
+#inf-form-1 {
+    height: 600px;
+}
+
+#inf-form-2 {
+}
+
+.form-label {
+    display: inline-block;
+    margin: 12px;
+    padding: 7px 12px;
+    font-size: 24px;
+    text-align: left;
+}
+
+#direct-contact p {
+    font-size: 22px;
+}
+
+select {
+    background-color: transparent;
+    font-family: aileron;
+    font-size: 20px;
+    letter-spacing: 0.07em;
+    padding: 7px 12px;
+    text-align: center;
+    margin-top: 12px;
+    margin-bottom: 24px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--pink);
+}
+
+select:hover {
+    border-bottom: 1px solid rgb(80, 152, 177);
+}
+
+
+input[type=text], input[type=number], input[type=email] {
+    color: var(--blue);
+    font-family: aileron;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0.07em;
+    padding: 7px 12px;
+    margin-top: 12px;
+    margin-bottom: 24px;
+    border: none;
+    border-bottom: 1px solid var(--pink);
+    background-color: rgba(0,0,0,0);
+    outline: none;
+    transition: 0.3s;
+}
+
+input[type=number] {
+    width: 40px;
+    height: 12px;
+    font-size: 14px;
+}
+
+input[type=text]:focus, input[type=text]:hover {
+    border-bottom: 1px solid rgb(80, 152, 177);
+}
+
+input[type=email]:focus, input[type=email]:hover {
+    border-bottom: 1px solid rgb(80, 152, 177);
+}
+
+.username-input {
+    margin: 28px;
+    margin-bottom: 0px;
+}
+
+.username-input .form-label {
+    margin-right: 0;
+    padding-right: 0;
+}
+
+.username-input input[type=text] {
+    border-bottom: 1px solid var(--blue);
+    text-align: left;
+    padding-left: 4px;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.checkbox-container {
+  display: block;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: 36px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.logo-img {
+    position: relative;
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+    z-index: 5;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    border: 1px solid var(--blue);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100px;
+    width: 100px;
+    border-radius: 24px;
+    transition: 0.3s;
+}
+
+/* On mouse-over, add a grey background color */
+.checkbox-container:hover input ~ .checkmark {
+  background-color: rgba(95, 106, 114,0.1);
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkbox-container input:checked ~ .checkmark {
+    background-color: rgba(95, 106, 114,0.2);
+}
+
+/* Style the checkmark/indicator */
+.checkbox-container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.select-container {
+  display: block;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: 36px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.select-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.button-text {
+    padding: 10px;
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+    position: relative;
+    color: var(--blue);
+    z-index: 5;
+    line-height: 80px;
+}
+
+.radio-check {
+    border: 1px solid var(--blue);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100px;
+    width: 100px;
+    border-radius: 24px;
+    transition: 0.3s;
+}
+
+.select-container:hover input ~ .radio-check {
+    background-color: rgba(95, 106, 114,0.1);
+}
+
+/* When the radio button is checked, add a blue background */
+.select-container input:checked ~ .radio-check {
+    background-color: rgba(95, 106, 114,0.2);
+}
